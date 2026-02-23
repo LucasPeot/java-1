@@ -1,0 +1,30 @@
+package com.salon.ejer29;
+
+import java.util.Scanner;
+
+public class Ejer29 {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int num = scan.nextInt();
+        int total = 0;
+        for (int i = 1; i < num; i++) {
+            if (eMultiplo(i)) {
+                total = total + i;
+            }
+        }
+        System.out.println(total);
+    }
+
+    public static boolean eMultiplo(int n) {
+        if (n % 3 == 0) {
+            return true;
+        } else if (n % 5 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+}
