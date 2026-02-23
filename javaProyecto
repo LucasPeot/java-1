@@ -1,5 +1,5 @@
 package com.salon.ejer29;
-
+//con comentarios esta mas chulo
 import java.util.Scanner;
 
 public class Ejer29 {
